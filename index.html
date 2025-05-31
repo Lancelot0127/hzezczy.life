@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>阿宝</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background-color: #001f3f;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .title {
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            max-width: 800px;
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .grid-item {
+            position: relative;
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid #001f3f;
+            border-radius: 8px;
+            overflow: hidden;
+            padding-top: 100%; /* 保持1:1纵横比 */
+        }
+
+        .grid-item img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .grid-item:hover img {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <h1 class="title">阿宝</h1>
+    <div class="grid-container">
+        <!-- 步骤1：测试网络图片 -->
+<div class="grid-item"><img src="abao.jpg" alt="柯基1"></div>
+<div class="grid-item"><img src="abao.jpg" alt="柯基2"></div>
+        <div class="grid-item"><img src="abao.jpg" alt="柯基3"></div>
+        <div class="grid-item"><img src="abao.jpg" alt="柯基4"></div>
+        <div class="grid-item"><img src="abao.jpg" alt="柯基5"></div>
+        <div class="grid-item"><img src="abao.jpg" alt="柯基6"></div>
+        <div class="grid-item"><img src="abao.jpg" alt="柯基7"></div>
+        <div class="grid-item"><img src="abao.jpg" alt="柯基8"></div>
+        <div class="grid-item"><img src="abao.jpg" alt="柯基9"></div>
+    </div>
+</body>
+</html>
